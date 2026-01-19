@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic E-Magazine | Perspectives on Governance & Culture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="index.html">Civic<span>E-Mag</span></a>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><button class="nav__btn active" data-category="all">All</button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="ai">AI & Governance</button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="demography">Demography</button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="culture">Digital Culture</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main container">
+        <section class="hero">
+            <h1 class="hero__title">Civic Insights for a Digital Age</h1>
+            <p class="hero__subtitle">Deep dives into technology governance, demographic shifts, and the evolving digital landscape.</p>
+        </section>
+
+        <section class="articles" id="article-grid">
+            <!-- Article 1: AI -->
+            <article class="card" data-category="ai">
+                <div class="card__content">
+                    <span class="card__tag">AI & Emerging Technology Governance</span>
+                    <h2 class="card__title">The Hidden Bottlenecks in Shanghai’s AI Ambitions</h2>
+                    <p class="card__excerpt">Exploring the primary challenges and policy recommendations for the development of the large model industry in Shanghai...</p>
+                    <a href="articles/The Hidden Bottlenecks in Shanghai’s AI Ambitions.html" class="card__link">Read Article &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Article 2: Demography -->
+            <article class="card" data-category="demography">
+                <div class="card__content">
+                    <span class="card__tag">Demography</span>
+                    <h2 class="card__title">How ‘China’s Demographic Crisis’ Became a Global Narrative</h2>
+                    <p class="card__excerpt">An analysis of how Western narratives on China's population crisis are constructed and their geopolitical implications...</p>
+                    <a href="articles/_How ‘China’s Demographic Crisis’ Became a Global Narrative.html" class="card__link">Read Article &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Article 3: Digital Culture -->
+            <article class="card" data-category="culture">
+                <div class="card__content">
+                    <span class="card__tag">Digital Culture</span>
+                    <h2 class="card__title">Rethinking Support for China’s Content Economy</h2>
+                    <p class="card__excerpt">Evaluating the effectiveness and optimization of policies supporting high-quality internet content creation...</p>
+                    <a href="articles/Rethinking Support for China’s Content Economy.html" class="card__link">Read Article &rarr;</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Civic E-Magazine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
