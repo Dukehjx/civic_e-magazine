@@ -3,58 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Civic E-Magazine | Perspectives on Governance & Culture</title>
+    <title>Public Matters | Perspectives on Governance & Culture</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-lang="en">
     <header class="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <a href="index.html">Civic<span>E-Mag</span></a>
+                <a href="index.html">Public<span>Matters</span></a>
             </div>
+            <button class="lang-toggle" id="lang-toggle">
+                <span class="lang-en">中文</span>
+                <span class="lang-zh">EN</span>
+            </button>
             <ul class="nav__list">
-                <li class="nav__item"><button class="nav__btn active" data-category="all">All</button></li>
-                <li class="nav__item"><button class="nav__btn" data-category="ai">AI & Governance</button></li>
-                <li class="nav__item"><button class="nav__btn" data-category="demography">Demography</button></li>
-                <li class="nav__item"><button class="nav__btn" data-category="culture">Digital Culture</button></li>
+                <li class="nav__item"><button class="nav__btn active" data-category="all"><span class="lang-en">All</span><span class="lang-zh">全部</span></button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="ai"><span class="lang-en">AI & Governance</span><span class="lang-zh">AI与治理</span></button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="demography"><span class="lang-en">Demography</span><span class="lang-zh">人口学</span></button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="culture"><span class="lang-en">Digital Culture</span><span class="lang-zh">数字文化</span></button></li>
+                <li class="nav__item"><button class="nav__btn" data-category="urban"><span class="lang-en">Urban Appeal</span><span class="lang-zh">城市魅力</span></button></li>
             </ul>
         </nav>
     </header>
 
     <main class="main container">
         <section class="hero">
-            <h1 class="hero__title">Civic Insights for a Digital Age</h1>
-            <p class="hero__subtitle">Deep dives into technology governance, demographic shifts, and the evolving digital landscape.</p>
+            <h1 class="hero__title">
+                <span class="lang-en">Public Matters</span>
+                <span class="lang-zh">公共事务观察</span>
+            </h1>
+            <p class="hero__subtitle">
+                <span class="lang-en">Deep dives into technology governance, demographic shifts, and the evolving digital landscape.</span>
+                <span class="lang-zh">深入探讨科技治理、人口变迁与数字时代的公共议题</span>
+            </p>
         </section>
 
         <section class="articles" id="article-grid">
             <!-- Article 1: AI -->
             <article class="card" data-category="ai">
                 <div class="card__content">
-                    <span class="card__tag">AI & Emerging Technology Governance</span>
-                    <h2 class="card__title">The Hidden Bottlenecks in Shanghai’s AI Ambitions</h2>
-                    <p class="card__excerpt">Exploring the primary challenges and policy recommendations for the development of the large model industry in Shanghai...</p>
-                    <a href="articles/The Hidden Bottlenecks in Shanghai’s AI Ambitions.html" class="card__link">Read Article &rarr;</a>
+                    <span class="card__tag">
+                        <span class="lang-en">AI & Emerging Technology Governance</span>
+                        <span class="lang-zh">AI与新兴技术治理</span>
+                    </span>
+                    <h2 class="card__title">
+                        <span class="lang-en">The Hidden Bottlenecks in Shanghai's AI Ambitions</span>
+                        <span class="lang-zh">上海大模型产业发展的瓶颈与对策</span>
+                    </h2>
+                    <p class="card__excerpt">
+                        <span class="lang-en">Exploring the primary challenges and policy recommendations for the development of the large model industry in Shanghai...</span>
+                        <span class="lang-zh">探讨上海大模型企业面临的自主研发成本高、高质量语料获取难等瓶颈问题及政策建议...</span>
+                    </p>
+                    <a href="articles/The Hidden Bottlenecks in Shanghai's AI Ambitions.html" class="card__link">
+                        <span class="lang-en">Read Article &rarr;</span>
+                        <span class="lang-zh">阅读全文 &rarr;</span>
+                    </a>
                 </div>
             </article>
 
             <!-- Article 2: Demography -->
             <article class="card" data-category="demography">
                 <div class="card__content">
-                    <span class="card__tag">Demography</span>
-                    <h2 class="card__title">How ‘China’s Demographic Crisis’ Became a Global Narrative</h2>
-                    <p class="card__excerpt">An analysis of how Western narratives on China's population crisis are constructed and their geopolitical implications...</p>
-                    <a href="articles/_How ‘China’s Demographic Crisis’ Became a Global Narrative.html" class="card__link">Read Article &rarr;</a>
+                    <span class="card__tag">
+                        <span class="lang-en">Demography</span>
+                        <span class="lang-zh">人口学</span>
+                    </span>
+                    <h2 class="card__title">
+                        <span class="lang-en">The Politics of Population: How 'China's Demographic Crisis' Became a Global Narrative</span>
+                        <span class="lang-zh">人口政治学："中国人口危机"如何成为全球叙事</span>
+                    </h2>
+                    <p class="card__excerpt">
+                        <span class="lang-en">An analysis of how Western narratives on China's population crisis are constructed and their geopolitical implications...</span>
+                        <span class="lang-zh">分析美西方如何通过媒体和智库构建"中国人口危机论"及其地缘政治影响...</span>
+                    </p>
+                    <a href="articles/_How 'China's Demographic Crisis' Became a Global Narrative.html" class="card__link">
+                        <span class="lang-en">Read Article &rarr;</span>
+                        <span class="lang-zh">阅读全文 &rarr;</span>
+                    </a>
                 </div>
             </article>
 
             <!-- Article 3: Digital Culture -->
             <article class="card" data-category="culture">
                 <div class="card__content">
-                    <span class="card__tag">Digital Culture</span>
-                    <h2 class="card__title">Rethinking Support for China’s Content Economy</h2>
-                    <p class="card__excerpt">Evaluating the effectiveness and optimization of policies supporting high-quality internet content creation...</p>
-                    <a href="articles/Rethinking Support for China’s Content Economy.html" class="card__link">Read Article &rarr;</a>
+                    <span class="card__tag">
+                        <span class="lang-en">Digital Culture</span>
+                        <span class="lang-zh">数字文化</span>
+                    </span>
+                    <h2 class="card__title">
+                        <span class="lang-en">Rethinking Support for China's Content Economy</span>
+                        <span class="lang-zh">重新思考对中国内容经济的支持政策</span>
+                    </h2>
+                    <p class="card__excerpt">
+                        <span class="lang-en">Evaluating the effectiveness and optimization of policies supporting high-quality internet content creation...</span>
+                        <span class="lang-zh">评估互联网优质内容创作支持政策的有效性及优化建议...</span>
+                    </p>
+                    <a href="articles/Rethinking Support for China's Content Economy.html" class="card__link">
+                        <span class="lang-en">Read Article &rarr;</span>
+                        <span class="lang-zh">阅读全文 &rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 4: Urban Appeal -->
+            <article class="card" data-category="urban">
+                <div class="card__content">
+                    <span class="card__tag">
+                        <span class="lang-en">Cultural Consumption & Urban Appeal</span>
+                        <span class="lang-zh">文化消费与城市魅力</span>
+                    </span>
+                    <h2 class="card__title">
+                        <span class="lang-en">What Shanghai Can Learn from Dubai's Experience Economy</span>
+                        <span class="lang-zh">借鉴迪拜经验：推动上海商旅文体展高效联动</span>
+                    </h2>
+                    <p class="card__excerpt">
+                        <span class="lang-en">Exploring Dubai's strategies in destination branding, tourist services, and cross-regional collaboration for Shanghai's tourism development...</span>
+                        <span class="lang-zh">探讨迪拜在塑造城市文旅品牌、打造国际游客服务体系等方面的经验对上海的启示...</span>
+                    </p>
+                    <a href="articles/What Shanghai Can Learn from Dubai's Experience Economy.html" class="card__link">
+                        <span class="lang-en">Read Article &rarr;</span>
+                        <span class="lang-zh">阅读全文 &rarr;</span>
+                    </a>
                 </div>
             </article>
         </section>
@@ -62,7 +131,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Civic E-Magazine. All rights reserved.</p>
+            <p>
+                <span class="lang-en">&copy; 2026 Public Matters. All rights reserved.</span>
+                <span class="lang-zh">&copy; 2026 公共事务观察. 保留所有权利.</span>
+            </p>
         </div>
     </footer>
 

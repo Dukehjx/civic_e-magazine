@@ -1,7 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.nav__btn');
     const articles = document.querySelectorAll('.card');
+    const langToggle = document.getElementById('lang-toggle');
+    const body = document.body;
 
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferred-lang') || 'en';
+    body.setAttribute('data-lang', savedLang);
+
+    // Language toggle functionality
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            const currentLang = body.getAttribute('data-lang');
+            const newLang = currentLang === 'en' ? 'zh' : 'en';
+            body.setAttribute('data-lang', newLang);
+            localStorage.setItem('preferred-lang', newLang);
+        });
+    }
+
+    // Category filter functionality
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Remove active class from all buttons

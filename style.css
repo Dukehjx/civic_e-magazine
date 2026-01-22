@@ -10,6 +10,10 @@
     --transition: all 0.3s ease;
 }
 
+/* Bilingual Toggling */
+[data-lang="en"] .lang-zh { display: none; }
+[data-lang="zh"] .lang-en { display: none; }
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +47,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .nav__logo a {
@@ -55,6 +61,23 @@ body {
 
 .nav__logo span {
     color: var(--accent-color);
+}
+
+.lang-toggle {
+    background: none;
+    border: 2px solid var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-toggle:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 .nav__list {
