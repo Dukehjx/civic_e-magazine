@@ -1,0 +1,5 @@
+# Claude AI configuration and skills
+.claude/
+
+# Agent documentation
+AGENTS.md
